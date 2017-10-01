@@ -20,6 +20,12 @@ namespace College.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Professor> Professors { get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Seminar> Seminars { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
