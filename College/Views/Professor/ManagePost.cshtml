@@ -25,8 +25,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
+                    <th>Edit/Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,8 +33,10 @@
             {
                     <tr>
                         <td>@post.Name</td>
-                        <td>@Html.ActionLink("Edit", "EditPost", "Professor", new { id = post.Id }, new { @class = "btn btn-primary" })</td>
-                        <td>@Html.ActionLink("Delete", "DeletePost", "Professor", new { id = post.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-primary" })</td>
+                        <td>
+                            @Html.ActionLink("Edit", "EditPost", "Professor", new { id = post.Id }, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Delete", "DeletePost", "Professor", new { id = post.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-danger" })
+                        </td>
                     </tr>
                 }
             </tbody>

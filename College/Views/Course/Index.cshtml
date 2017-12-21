@@ -31,7 +31,7 @@
                         <td>@course.Department.Name</td>
                         <td>
                             @Html.ActionLink("Edit", "EditCourse", "Course", new { id = course.Id }, new { @class = "btn btn-primary" })
-                            @Html.ActionLink("Delete", "DeleteCourse", "Course", new { id = course.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-primary" })
+                            @Html.ActionLink("Delete", "DeleteCourse", "Course", new { id = course.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-danger" })
                         </td>
                     </tr>
                 }

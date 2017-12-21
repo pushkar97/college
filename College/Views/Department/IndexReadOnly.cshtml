@@ -29,7 +29,16 @@
             {
                 <tr>
                     <td>@Html.ActionLink(department.Name, "DepartmentDetails", "Department", new {id = department.Id}, null)</td>
-                    <td>@Html.ActionLink(department.Event.Name, "EventDetails", "Department", new {id = department.Event.Id}, null)</td>
+                    <td>
+                        @if (department.EventId.HasValue)
+                        {
+                            @Html.ActionLink(department.Event.Name, "EventDetails", "Department", new { id = department.Event.Id }, null)
+                        }
+                        else
+                        {
+                            <text>-</text>
+                        }
+                    </td>
                 </tr>
             }
             </tbody>

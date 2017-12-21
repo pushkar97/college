@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 @Html.LabelFor(d => d.Department.Description)
-                @Html.TextAreaFor(d => d.Department.Description, new { @class = "form-control" })
+                @Html.TextAreaFor(d => d.Department.Description, new { @class = "form-control", id="description"})
                 @Html.ValidationMessageFor(d => d.Department.Description)
             </div>
             <div class="form-group">
@@ -37,4 +37,7 @@
 @section scripts
 {
     @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        CKEDITOR.replace("description");
+    </script>
 }

@@ -19,7 +19,7 @@
             </thead>
             <tbody>
                 @foreach (var course in Model)
-            {
+                {
                     <tr>
                         <td>@Html.ActionLink(course.Name, "CourseDetails", "Course", new { id = course.Id }, null)</td>
                         <td>@course.Department.Name</td>

@@ -36,7 +36,7 @@
                         <td>@professor.Post.Name</td>
                         <td>
                             @Html.ActionLink("Edit", "EditProfessor", "Professor", new { id = professor.Id }, new { @class = "btn btn-primary" })
-                            @Html.ActionLink("Delete", "DeleteProfessor", "Professor", new { id = professor.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-primary" })
+                            @Html.ActionLink("Delete", "DeleteProfessor", "Professor", new { id = professor.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-danger" })
                         </td>
                     </tr>
                 }

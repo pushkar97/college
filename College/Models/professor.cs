@@ -23,7 +23,6 @@ namespace College.Models
         public byte DepartmentId { get; set; }
 
         [Display(Name = "Experience In Years")]
-
         public byte ExperienceInYears { get; set; }
 
         public Post Post { get; set; }

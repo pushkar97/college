@@ -34,7 +34,7 @@
                     <td>@seminar.Date.ToLongDateString()</td>
                     <td>
                         @Html.ActionLink("Edit", "EditSeminar", "Seminar", new { id = seminar.Id }, new { @class = "btn btn-primary" })
-                        @Html.ActionLink("Delete", "DeleteSeminar", "Seminar", new { id = seminar.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-primary" })
+                        @Html.ActionLink("Delete", "DeleteSeminar", "Seminar", new { id = seminar.Id }, new { onclick = "return confirm('Are you sure?');", @class = "btn btn-danger" })
                     </td>
                 </tr>
             }
