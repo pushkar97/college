@@ -226,16 +226,49 @@
     <Compile Include="Migrations\201710011317511_eventIdMadeNullable.Designer.cs">
       <DependentUpon>201710011317511_eventIdMadeNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803120802305_addMonthTable.cs" />
+    <Compile Include="Migrations\201803120802305_addMonthTable.Designer.cs">
+      <DependentUpon>201803120802305_addMonthTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120807204_populatingMonthTable.cs" />
+    <Compile Include="Migrations\201803120807204_populatingMonthTable.Designer.cs">
+      <DependentUpon>201803120807204_populatingMonthTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120841009_updateMonthsTable.cs" />
+    <Compile Include="Migrations\201803120841009_updateMonthsTable.Designer.cs">
+      <DependentUpon>201803120841009_updateMonthsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120846081_addSubjectModel.cs" />
+    <Compile Include="Migrations\201803120846081_addSubjectModel.Designer.cs">
+      <DependentUpon>201803120846081_addSubjectModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120859456_addStudentModel.cs" />
+    <Compile Include="Migrations\201803120859456_addStudentModel.Designer.cs">
+      <DependentUpon>201803120859456_addStudentModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120912132_addAttendanceModel.cs" />
+    <Compile Include="Migrations\201803120912132_addAttendanceModel.Designer.cs">
+      <DependentUpon>201803120912132_addAttendanceModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803120923111_addExamModel.cs" />
+    <Compile Include="Migrations\201803120923111_addExamModel.Designer.cs">
+      <DependentUpon>201803120923111_addExamModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Month.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Models\professor.cs" />
     <Compile Include="Models\Seminar.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CourseFormViewModel.cs" />
@@ -895,6 +928,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710011317511_eventIdMadeNullable.resx">
       <DependentUpon>201710011317511_eventIdMadeNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120802305_addMonthTable.resx">
+      <DependentUpon>201803120802305_addMonthTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120807204_populatingMonthTable.resx">
+      <DependentUpon>201803120807204_populatingMonthTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120841009_updateMonthsTable.resx">
+      <DependentUpon>201803120841009_updateMonthsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120846081_addSubjectModel.resx">
+      <DependentUpon>201803120846081_addSubjectModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120859456_addStudentModel.resx">
+      <DependentUpon>201803120859456_addStudentModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120912132_addAttendanceModel.resx">
+      <DependentUpon>201803120912132_addAttendanceModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803120923111_addExamModel.resx">
+      <DependentUpon>201803120923111_addExamModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

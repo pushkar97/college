@@ -26,6 +26,12 @@ namespace College.Models
         public DbSet<Post> Posts { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<Seminar> Seminars { get; set; }
+        public DbSet<Month> Months { get; set; }
+        public DbSet<Subject> Subjects { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Attendance> Attendance { get; set; }
+        public DbSet<Exam> Exams { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
